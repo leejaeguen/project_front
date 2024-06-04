@@ -1,0 +1,120 @@
+@charset "utf-8";
+
+/*글꼴*/
+@import url("https://fonts.googleapis.com/css2?family=Edu+TAS+Beginner:wght@400..700&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Hi+Melody&family=Nanum+Pen+Script&display=swap');
+
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+ul,
+ol {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+.home {
+  background-image: url("../image/home.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 100vh;
+}
+
+.bar {
+  display: flex;
+  justify-content: space-between;
+  font-size: 35px;
+}
+/*로고*/
+.logo a {
+  color: #000;
+  font-family: "Edu TAS Beginner", cursive;
+  text-shadow: 10px 10px 30px #000;
+}
+
+/* 메뉴 */
+.menu {
+  display: flex;
+  list-style: none;
+}
+
+.menu li {
+  margin: 0 20px;
+}
+
+.menu li:hover {
+  transform: scale(120%);
+}
+
+.menu li a {
+  font-family: "Edu TAS Beginner", cursive;
+  text-decoration: underline;
+  color: #000;
+  text-shadow: 10px 10px 30px #000;
+  letter-spacing: 3px;
+}
+
+/*아이콘*/
+.icon i {
+  text-shadow: 10px 10px 30px #000;
+  color: #000;
+}
+
+.icon i:hover {
+  transform: scale(120%);
+}
+
+.fa-github{
+  margin-right: 5px;
+}
+
+/*프로필 사진*/
+.profile {
+  width: 100%;
+  text-align: center;
+  margin-top: 100px;
+  margin-bottom: 170px;
+}
+
+.profile img {
+  width: 250px;
+  height: 250px;
+  border-radius: 50%;
+  box-shadow: 5px 15px 30px #000;
+  margin-bottom: 30px;
+}
+
+.profile h1 {
+  font-family: "Nanum Pen Script", cursive;
+  font-size: 30px;
+  color: #000;
+  text-shadow: 20px 20px 60px #000;
+}
+
+.foot {
+  display: flex;
+  justify-content: center;
+}
+
+.foot ul {
+  list-style: none;
+  display: inline-flex;
+}
+
+.foot ul li {
+  margin: 0 20px;
+}
+
+.foot p {
+  font-family: "Edu TAS Beginner", cursive;
+  font-size: 15px;
+  color: #000;
+  text-shadow: 10px 10px 30px #000;
+}

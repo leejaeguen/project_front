@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guest book</title>
+    <link rel="stylesheet" href="css/Guest book.css">
+    <script src="https://kit.fontawesome.com/de7b535995.js" crossorigin="anonymous"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script defer src="js/Guest book.js"></script>
+</head>
+
+<body class="home">
+    <nav class="bar">
+        <ul class="logo">
+            <a target="_blank" href="home.html"><i class="far fa-moon"></i>jeageun</a>
+        </ul>
+
+        <ul class="menu">
+            <li><a target="_blank" href="home.html">Home</a></li>
+            <li><a target="_blank" href="About me.html">About me</a></li>
+            <li><a target="_blank" href="Guest book.html">Guest book</a></li>
+        </ul>
+
+        <ul class="icon">
+            <a target="_blank" href="https://www.instagram.com/jaegeun28/?hl=ko"><i class="fab fa-instagram"></i></a>
+            <a target="_blank" href="https://github.com/leejaeguen"><i class="fab fa-github"></i></a>
+        </ul>
+    </nav>
+
+    <div class="container">
+        <h1>방명록</h1>
+
+        <input type="text" id="nameInput" class="todo-input" placeholder="이름">
+        <input type="text" id="contentInput" class="todo-input2" placeholder="내용">
+        <button onclick="sendTodo()">보내기</button>
+
+        <div class="todos-container" id="todosContainer">
+            <div class="todo-item">
+                1
+                <button class="delete-btn">x</button>
+            </div>
+    
+            <div class="todo-item">
+                2
+                <button class="delete-btn">x</button>
+            </div>
+    
+            <div class="todo-item">
+                3
+                <button class="delete-btn">x</button>
+            </div>
+    
+            <div class="todo-item">
+                4
+                <button class="delete-btn">x</button>
+            </div>
+    
+            <div class="todo-item">
+                5
+                <button class="delete-btn">x</button>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,182 @@
+@charset "utf-8";
+
+/*글꼴*/
+@import url("https://fonts.googleapis.com/css2?family=Edu+TAS+Beginner:wght@400..700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Hi+Melody&family=Nanum+Pen+Script&display=swap");
+
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+ul,
+ol {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+.home {
+  background-image: url("../image/home.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 100vh;
+}
+
+.bar {
+  display: flex;
+  justify-content: space-between;
+  font-size: 35px;
+}
+
+/*로고*/
+.logo a {
+  color: #000;
+  font-family: "Edu TAS Beginner", cursive;
+  text-shadow: 10px 10px 30px #000;
+}
+
+/* 메뉴 */
+.menu {
+  display: flex;
+  list-style: none;
+}
+
+.menu li {
+  margin: 0 20px;
+}
+
+.menu li:hover {
+  transform: scale(120%);
+}
+
+.menu li a {
+  font-family: "Edu TAS Beginner", cursive;
+  text-decoration: underline;
+  color: #000;
+  text-shadow: 10px 10px 30px #000;
+  letter-spacing: 3px;
+}
+
+/*아이콘*/
+.icon i {
+  text-shadow: 10px 10px 30px #000;
+  color: #000;
+}
+
+.icon i:hover {
+  transform: scale(120%);
+}
+
+.fa-github{
+  margin-right: 5px;
+}
+
+.container {
+  width: 900px;
+  height: 575px;
+  overflow-x: auto;
+  padding: 30px;
+  background-image: url("../image/guest book.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  margin: 50px auto;
+  box-shadow: 10px 10px 30px #000;
+  border-radius: 10px;
+}
+
+.container h1 {
+  font-family: "Nanum Pen Script", cursive;
+  text-align: center;
+  font-size: 35px;
+  margin-bottom: 10px;
+  padding: 10px;
+}
+
+.todo-input,
+.todo-input2,
+button {
+  font-family: "Nanum Pen Script", cursive;
+  font-size: 25px;
+  vertical-align: middle;
+  padding: 5px;
+  box-shadow: 5px 5px 20px #000;
+  border: 1px solid #000;
+  margin-bottom: 25px;
+}
+
+.todo-input {
+  width: 100px;
+  height: 35px;
+}
+
+.todo-input2 {
+  width: 400px;
+  height: 35px;
+}
+
+button {
+  width: 75px;
+  height: 35px;
+}
+
+button:hover {
+  transform: scale(105%);
+}
+
+.todos-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.todo-item {
+  font-family: "Nanum Pen Script", cursive;
+  background-color: #fff;
+  top: 5px;
+  right: 5px;
+  width: 600px;
+  padding: 5px;
+  margin-bottom: 20px;
+  font-size: 25px;
+  box-shadow: 0 0 10px #000;
+  position: relative;
+  word-wrap: break-word;
+  display: block;
+}
+
+.todo-item:hover {
+  background-color: rgb(193, 193, 193);
+}
+
+.delete-btn {
+  display: none;
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  width: 10px;
+  height: 10px;
+  background-color: #fff;
+  color: #000;
+  border: 1px solid #000;
+  padding: 8px 8px;
+  font-size: 20px;
+  cursor: pointer;
+  
+}
+
+.todo-item:hover .delete-btn {
+  display: flex;
+  position: absolute;
+  line-height: 2px;
+  justify-content: center;
+  align-items: center;
+}
+
+.todo-item:hover .delete-btn:hover {
+  transform: scale(120%);
+}
